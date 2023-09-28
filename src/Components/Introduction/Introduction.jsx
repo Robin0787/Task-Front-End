@@ -1,6 +1,8 @@
 import { BsFolder2 } from 'react-icons/bs';
 import { CiClock2 } from 'react-icons/ci';
 import img1 from "../../assets/img-1.jpg";
+import img2 from "../../assets/img-2.jpg";
+import img3 from "../../assets/img-3.jpg";
 import man from "../../assets/man.png";
 
 const Introduction = () => {
@@ -29,9 +31,38 @@ const Introduction = () => {
                     <span className='text-[#c59d5f] underline'>letraset sheets</span>{" "}
                     of letters, as opposed to using ‘Content here, content here’, point of using Lorem Ipsum is that it has a more-or-less making it look like readable English.</p>
             </section>
-            <section className='mt-10'>
-                <section className='w-full py-5 bg-lightBg'>
-                    <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</h2>
+            <section className='my-10'>
+                <section className='w-full bg-lightBg py-[40px] md:p-[30px] pl-6  md:pl-[92px] rounded-none relative'>
+                    <h2 className="quote pt-6 md:pt-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</h2>
+                    <p className="quote-author">Mark Johnson</p>
+                </section>
+                <div className="mt-7">
+                    <p className='text-muted text-justify leading-[27px] w-full'>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always true generator on the Internet free from repetition, injected humour, etc.</p>
+                </div>
+            </section>
+            <section className="flex flex-col md:flex-row justify-between items-center w-full gap-5">
+                <div className="w-full md:w-1/2 relative group cursor-pointer">
+                    <img src={img2} alt="" className="w-full object-cover h-full "/>
+                    <div className="absolute top-0 left-0 h-full w-full bg-[#111111] bg-opacity-0 group-hover:bg-opacity-40 duration-500"></div>
+                </div>
+                <div className="w-full md:w-1/2 relative group cursor-pointer">
+                   <img src={img3} alt="" className="w-full object-cover h-full"/>
+                   <div className="absolute top-0 left-0 h-full w-full bg-[#111111] bg-opacity-0 group-hover:bg-opacity-40 duration-500"></div>
+                </div>
+            </section>
+            <section className='mt-10 flex flex-col md:flex-row justify-start items-start md:justify-between md:items-center gap-5'>
+                <div className="flex justify-start items-center gap-[10px]">
+                    <button className="px-5 py-[6px] text-[15px] text-muted hover:text-white bg-[#2c3238] hover:bg-btnBg duration-300">daily</button>
+                    <button className="px-5 py-[6px] text-[15px] text-muted hover:text-white bg-[#2c3238] hover:bg-btnBg duration-300">desserts</button>
+                    <button className="px-5 py-[6px] text-[15px] text-muted hover:text-white bg-[#2c3238] hover:bg-btnBg duration-300">food</button>
+                </div>
+                <div>
+                    <p className="text-muted">Comments (0)</p>
+                </div>
+            </section>
+            <section className="mt-10">
+                <section className="">
+
                 </section>
             </section>
         </section>

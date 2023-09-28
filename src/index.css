@@ -52,3 +52,45 @@ body {
 .menu-link:hover::after {
   transform: rotate(135deg);
 }
+
+/* text-[20px] leading-[32px] font-[600]*/
+
+.quote {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.quote::before {
+  content: "\e67f";
+  font-family: "themify";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  font-size: 27px;
+  top: 0;
+  color: #fff;
+  background: #c59d5f;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-author {
+  font-size: 16px;
+  color: #c59d5f;
+  padding-left: 29px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.quote-author::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #c59d5f;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
