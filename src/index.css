@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #c49f66;
+  color: white;
+}
+
+body {
+  background-color: #0e1317;
+}
+
+.font-Nunito {
+  font-family: "Nunito Sans";
+}
+
+.font-Themify {
+  font-family: "themify";
+}
+
+.menu-link {
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.menu-link::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin: 0 12px 0 17px;
+  transform: rotate(45deg);
+  background: #c49f66;
+  display: inline-block;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-link:hover {
+  color: #c49f66;
+}
+
+.menu-link:hover::after {
+  transform: rotate(135deg);
+}
