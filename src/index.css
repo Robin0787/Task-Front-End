@@ -189,6 +189,56 @@ textarea:focus + .textareaBottom::before {
 
 /* ---- End------- Bottom color for the inputs and the textarea -----End---- */
 
+/* Footer Background Images */
+
+.footer {
+  background-image: url("./assets/footer-bg.png"),
+    url("./assets/footer-bg-2.png");
+  background-size: auto 400px, cover;
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+}
+.footer-top {
+  background-image: url("./assets/footer-bg-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Footer menu styles --------------------Start------------------- */
+
+.footer-menu {
+  position: relative;
+  color: #ababab;
+  padding-left: 20px;
+  transition: 0.4s ease;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.footer-menu:hover {
+  color: white;
+}
+
+.footer-menu::before {
+  content: "";
+  vertical-align: middle;
+  font-size: 12px;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 0;
+  transition: all 250ms ease-in-out 0s;
+  background: #c49f6680;
+  display: inline-block;
+  top: 50%;
+}
+.footer-menu:hover::before {
+  transform: rotate(135deg);
+  background: #c59d5f;
+}
+
 @media screen and (max-width: 576px) {
   .colorSpicyContainer::after {
     display: hidden;
@@ -197,8 +247,11 @@ textarea:focus + .textareaBottom::before {
   .colorSpicy {
     white-space: nowrap;
   }
-
   .colorSpicy::before {
     top: 0;
+  }
+  .footer,
+  .footer-top {
+    background-image: none;
   }
 }

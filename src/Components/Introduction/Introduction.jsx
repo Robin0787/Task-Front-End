@@ -1,28 +1,13 @@
-import { BsFolder2 } from 'react-icons/bs';
-import { CiClock2 } from 'react-icons/ci';
 import img1 from "../../assets/img-1.jpg";
 import img2 from "../../assets/img-2.jpg";
 import img3 from "../../assets/img-3.jpg";
-import man from "../../assets/man.png";
+import Heading from "./Heading";
+import MessageBox from "./MessageBox";
 
 const Introduction = () => {
     return (
         <section className="text-white">
-            <h1 className="text-[50px] leading-[59px] font-bold font-Themify mb-4">Things to Know When Choosing Foods</h1>
-            <div className="flex justify-start items-center gap-5 border-b border-[#a0abb446] pb-10">
-                <div className="flex justify-start items-center gap-3">
-                    <img src={man} alt="man" className="w-5 h-5 object-cover object-center rounded-full" />
-                    <a href="#" className="menu-link text-muted text-[15px]">Restont</a>
-                </div>
-                <div className="flex justify-start items-center gap-3">
-                    <CiClock2 size={20} className="text-[#c59d5f]" />
-                    <a href="#" className="menu-link text-muted text-[15px]">April 19, 2022</a>
-                </div>
-                <div className="flex justify-start items-center gap-3">
-                    <BsFolder2 size={20} className="text-[#c59d5f]" />
-                    <a href="#" className="menu-link text-muted text-[15px]">Daily Menu</a>
-                </div>
-            </div>
+           <Heading />
             <section className='mt-10 space-y-6'>
                 <img src={img1} alt="img" className='object-cover h-full w-full md:w-[700px] mx-auto' />
                 <p className='text-muted text-justify leading-[27px] w-full'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -66,38 +51,11 @@ const Introduction = () => {
                         <div className="w-full md:w-1/2 colorSpicyContainer relative group-hover:text-[#c59d5f]">
                             <h4 className="colorSpicy w-full">Colour Spicy to Spring <br className="hidden md:block" /> in Your Table</h4>
                         </div>
-                        <div className="w-full md:w-1/2">
-
-                        </div>
+                        <div className="w-full md:w-1/2"></div>
                     </section>
                 </section>
             </section>
-            <section className="mt-10">
-                <section className="px-10 pt-[30px] pb-12 bg-darkBg">
-                    <section className="">
-                        <h1 className="text-[32px] text-white font-Themify mb-3">Leave a Reply</h1>
-                        <p id="bottom" className="text-muted mb-5">Your email address will not be published. Required fields are marked*</p>
-                        <div className="flex flex-col md:flex-row justify-between items-center w-full gap-10">
-                            <div className="relative w-full md:w-1/2">
-                                <input className="w-full py-3 bg-transparent text-muted border-0 border-b border-[#2e3033] outline-0 relative input" placeholder="Name *" />
-                                <div className='bottom'></div>
-                            </div>
-                            <div className="relative w-full md:w-1/2">
-                                <input className="w-full py-3 bg-transparent text-muted border-0 border-b border-[#2e3033] outline-0 relative input" placeholder="Email *" />
-                                <div className='bottom'></div>
-                            </div>
-                        </div>
-                        <div className="mt-8 relative w-full">
-                            <textarea rows="7" cols="20" className="w-full bg-transparent text-muted border-0 border-b border-[#2e3033] outline-0 relative input" placeholder="Comment">
-                            </textarea>
-                            <div className='textareaBottom'></div>
-                        </div>
-                        <div className="mt-8 w-full">
-                            <button className="py-3 px-[35px] bg-btnBg text-[15px] tracking-[0.5px] font-semibold uppercase hover:bg-lightBg duration-300">Post</button>
-                        </div>
-                    </section>
-                </section>
-            </section>
+            <MessageBox />
         </section>
     );
 };
