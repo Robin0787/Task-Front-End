@@ -2,6 +2,7 @@
 import Banner from "../../Components/Banner/Banner";
 import Container from "../../Components/Container/Container";
 import Introduction from "../../Components/Introduction/Introduction";
+import RightPart from "../../Components/RightPart/RightPart";
 
 
 const Home = () => {
@@ -14,8 +15,8 @@ const Home = () => {
                         <section className="w-full lg:w-[67%]">
                             <Introduction />
                         </section>
-                        <section className="w-full lg:w-[33%] border h-[200px]">
-
+                        <section className="w-full lg:w-[33%]">
+                            <RightPart />
                         </section>
                     </section>
                 </Container>
