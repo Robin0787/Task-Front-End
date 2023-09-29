@@ -57,13 +57,37 @@ const Introduction = () => {
                     <button className="px-5 py-[6px] text-[15px] text-muted hover:text-white bg-[#2c3238] hover:bg-btnBg duration-300">food</button>
                 </div>
                 <div>
-                    <p className="text-muted">Comments (0)</p>
+                    <p className="text-muted hover:text-[#c59d5f] duration-300 cursor-pointer">Comments (0)</p>
                 </div>
             </section>
             <section className="mt-10">
-                <section className="">
-
+                <section className="w-full bg-lightBg py-16 px-4 md:px-10 md:py-10 rounded-none relative">
+                    <section className="flex justify-between items-center group cursor-pointer">
+                        <div className="w-full md:w-1/2 colorSpicyContainer relative group-hover:text-[#c59d5f]">
+                             <h4 className="colorSpicy w-full">Colour Spicy to Spring <br className="hidden md:block"/> in Your Table</h4>  
+                        </div>
+                        <div className="w-full md:w-1/2">
+                                    
+                        </div>
+                    </section>
                 </section>
+            </section>
+            <section className="mt-10">
+                  <section className="px-10 pt-[30px] pb-12 bg-darkBg">
+                        <section className="">
+                                    <h1 className="text-[32px] text-white font-Themify mb-3">Leave a Reply</h1>
+                                    <p className="text-muted mb-5">Your email address will not be published. Required fields are marked*</p>
+                                    <div className="flex flex-col md:flex-row justify-between items-center w-full gap-10">
+                                         <input className="w-full md:w-1/2 py-2 bg-transparent text-muted border-0 border-b border-[#2e3033] outline-0 relative input" placeholder="Name *"/>
+                                         <input className="w-full md:w-1/2 py-2 bg-transparent text-muted border-0 border-b border-[#2e3033] outline-0 relative input" placeholder="Email *"/>
+                                    </div>
+                                    <div  className="mt-8">
+                                         <textarea rows="10" cols="20" className="w-full bg-transparent text-muted border-0 border-b border-[#2e3033] outline-0 relative input"  placeholder="Comment">
+                                         
+                                         </textarea>
+                                    </div>
+                        </section>
+                  </section>
             </section>
         </section>
     );
